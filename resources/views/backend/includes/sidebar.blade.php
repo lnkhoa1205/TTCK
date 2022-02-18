@@ -6,7 +6,7 @@
     </a>
 
     <!-- Sidebar -->
-    <div class="sidebar os-host os-theme-light os-host-overflow os-host-overflow-y os-host-resize-disabled os-host-transition os-host-scrollbar-horizontal-hidden"><div class="os-resize-observer-host observed"><div class="os-resize-observer" style="left: 0px; right: auto;"></div></div><div class="os-size-auto-observer observed" style="height: calc(100% + 1px); float: left;"><div class="os-resize-observer"></div></div><div class="os-content-glue" style="margin: 0px -8px; width: 249px; height: 309px;"></div><div class="os-padding"><div class="os-viewport os-viewport-native-scrollbars-invisible" style="overflow-y: scroll;"><div class="os-content" style="padding: 0px 8px; height: 100%; width: 100%;">
+    <div class="sidebar">
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
@@ -26,16 +26,17 @@
               <i class="fas fa-search fa-fw"></i>
             </button>
           </div>
-        </div><div class="sidebar-search-results"><div class="list-group"><a href="#" class="list-group-item"><div class="search-title"><strong class="text-light"></strong>N<strong class="text-light"></strong>o<strong class="text-light"></strong> <strong class="text-light"></strong>e<strong class="text-light"></strong>l<strong class="text-light"></strong>e<strong class="text-light"></strong>m<strong class="text-light"></strong>e<strong class="text-light"></strong>n<strong class="text-light"></strong>t<strong class="text-light"></strong> <strong class="text-light"></strong>f<strong class="text-light"></strong>o<strong class="text-light"></strong>u<strong class="text-light"></strong>n<strong class="text-light"></strong>d<strong class="text-light"></strong>!<strong class="text-light"></strong></div><div class="search-path"></div></a></div></div>
+        </div>
       </div>
 
       <!-- Sidebar Menu -->
       <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column nav-flat nav-collapse-hide-child" data-widget="treeview" role="menu" data-accordion="false">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
+          <li class="nav-header">Sản phẩm</li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Sản phẩm
@@ -46,94 +47,82 @@
               <li class="nav-item">
                 <a href="{{route('product.create')}}" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Tạo mới sản phẩm</p>
+                  <p>Tạo sản phẩm mới</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./index2.html" class="nav-link">
+                <a href="{{route('product.index')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v2</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="./index3.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v3</p>
+                  <p>Sản phẩm</p>
                 </a>
               </li>
             </ul>
           </li>
-          {{-- <li class="nav-item">
+          <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-copy"></i>
+              <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
-                Layout Options
-                <i class="fas fa-angle-left right"></i>
-                <span class="badge badge-info right">6</span>
+                Thiết lập shop
+                <i class="right fas fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/layout/top-nav.html" class="nav-link">
+                <a href="{{route('myshop')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Top Navigation</p>
+                  <p>Hồ sơ Shop</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                <a href="{{route('ship')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Top Navigation + Sidebar</p>
+                  <p>Cài đặt vận chuyển</p>
+                </a>
+              </li>     
+              <li class="nav-item">
+                <a href="{{route('warehouse.index')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Địa chỉ shop</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/layout/boxed.html" class="nav-link">
+                <a href="{{route('select.index')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Boxed</p>
+                  <p>Tài khoản/ ngân hàng</p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="pages/layout/fixed-sidebar.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Sidebar</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Sidebar <small>+ Custom Area</small></p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/layout/fixed-topnav.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Navbar</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/layout/fixed-footer.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Footer</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/layout/collapsed-sidebar.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Collapsed Sidebar</p>
-                </a>
-              </li>
+              
             </ul>
           </li>
-          <li class="nav-header">MULTI LEVEL EXAMPLE</li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="fas fa-circle nav-icon"></i>
-              <p>Level 1</p>
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Admin Setting
+                <i class="right fas fa-angle-left"></i>
+              </p>
             </a>
-          </li> --}}
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{route('category.index')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Danh mục</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{route('select.index')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Gợi ý</p>
+                </a>
+              </li>     
+            </ul>
+          </li>
+         
+          
           
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
-    </div></div></div><div class="os-scrollbar os-scrollbar-horizontal os-scrollbar-unusable os-scrollbar-auto-hidden"><div class="os-scrollbar-track"><div class="os-scrollbar-handle" style="width: 100%; transform: translate(0px, 0px);"></div></div></div><div class="os-scrollbar os-scrollbar-vertical os-scrollbar-auto-hidden"><div class="os-scrollbar-track"><div class="os-scrollbar-handle" style="height: 18.5075%; transform: translate(0px, 0px);"></div></div></div><div class="os-scrollbar-corner"></div></div>
+    </div>
     <!-- /.sidebar -->
   </aside>
