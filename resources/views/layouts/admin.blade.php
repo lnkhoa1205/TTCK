@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="csrf-token" content="{{ csrf_token() }}">
   <title>AdminLTE 3 | Dashboard</title>
 
   <!-- Google Font: Source Sans Pro -->
@@ -10,25 +11,22 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="{{asset('backend/plugins/fontawesome-free/css/all.min.css')}}">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css')}}">
-  <!-- Tempusdominus Bootstrap 4 -->
-  <link rel="stylesheet" href="{{asset('backend/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css')}}">
-  <!-- iCheck -->
-  <link rel="stylesheet" href="{{asset('backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
-  <!-- JQVMap -->
-  <link rel="stylesheet" href="{{asset('backend/plugins/jqvmap/jqvmap.min.css')}}">
   <!-- Theme style -->
   <link rel="stylesheet" href="{{asset('backend/dist/css/adminlte.min.css')}}">
   <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="{{asset('backend/plugins/overlayScrollbars/css/OverlayScrollbars.min.css')}}">
-  <!-- Daterange picker -->
-  <link rel="stylesheet" href="{{asset('backend/plugins/daterangepicker/daterangepicker.css')}}">
+  
   <!-- summernote -->
   <link rel="stylesheet" href="{{asset('backend/plugins/summernote/summernote-bs4.min.css')}}">
   <link rel="stylesheet" href="{{asset('backend/plugins/select2/css/select2.min.css')}}">
   <link rel="stylesheet" href="{{asset('backend/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css')}}">
   <link rel="stylesheet" href="{{asset('backend/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css')}}">
-  <link rel="stylesheet" href="{{asset('backend/plugins/toastr/toastr.min.css')}}">
+  <!-- BS Stepper -->
+  <link rel="stylesheet" href="{{asset('backend/plugins/bs-stepper/css/bs-stepper.min.css')}}">
+  <link rel="stylesheet" href="{{asset('backend/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')}}">
+  {{-- <link rel="stylesheet" href="{{asset('backend/plugins/toastr/toastr.min.css')}}"> --}}
+  <script src="{{asset('backend/plugins/jquery/jquery.min.js')}}"></script>
+  <script src="{{asset('backend/plugins/sweetalert2/sweetalert2.min.js')}}"></script>
+  <script src="{{asset('backend/plugins/bootstrap/bootstrap-notify.js')}}"></script>
   <style>
   body {
     position: relative; 
@@ -43,9 +41,54 @@
       -webkit-transform:rotate(90deg);
       transform:rotate(90deg);
   }
+  /*.select2-container--bootstrap4 .select2-results>.select2-results__options{
+    max-height: 32px;
+  }*/
+  .select2-container--default .select2-search--dropdown .select2-search__field{
+    height: 32px!important;
+  }
   </style>
+  
 </head>
 <body data-spy="scroll" data-target="#list-card" data-offset="50" class="hold-transition sidebar-mini layout-fixed">
+@if (session('status'))
+  <script>
+    color = 'success';
+
+    $.notify({
+      icon: "nc-icon nc-check-2",
+      message: "{{session('status')}}"
+
+    }, {
+      type: color,
+      timer: 1000,
+      placement: {
+        from: 'top',
+        align: 'right'
+      }
+    });
+  </script>
+@endif
+@if ($errors->any())
+  @foreach ($errors->all() as $error)
+    <script>
+    color = 'danger';
+
+    $.notify({
+      icon: "nc-icon nc-simple-remove",
+      message: "{{ $error }}"
+
+    }, {
+      type: color,
+      timer: 5000,
+      placement: {
+        from: 'top',
+        align: 'right'
+      }
+    });
+  </script>
+  @endforeach
+@endif  
 <div class="wrapper">
 
   <!-- Preloader -->
@@ -86,7 +129,7 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
-<script src="{{asset('backend/plugins/jquery/jquery.min.js')}}"></script>
+
 <!-- jQuery UI 1.11.4 -->
 <script src="{{asset('backend/plugins/jquery-ui/jquery-ui.min.js')}}"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
@@ -95,40 +138,118 @@
 </script>
 <!-- Bootstrap 4 -->
 <script src="{{asset('backend/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-<!-- ChartJS -->
-<script src="{{asset('backend/plugins/chart.js')}}/Chart.min.js')}}"></script>
-<!-- Sparkline -->
-<script src="{{asset('backend/plugins/sparklines/sparkline.js')}}"></script>
-<!-- JQVMap -->
-<script src="{{asset('backend/plugins/jqvmap/jquery.vmap.min.js')}}"></script>
-<script src="{{asset('backend/plugins/jqvmap/maps/jquery.vmap.usa.js')}}"></script>
-<!-- jQuery Knob Chart -->
-<script src="{{asset('backend/plugins/jquery-knob/jquery.knob.min.js')}}"></script>
-<!-- daterangepicker -->
-<script src="{{asset('backend/plugins/moment/moment.min.js')}}"></script>
-<script src="{{asset('backend/plugins/daterangepicker/daterangepicker.js')}}"></script>
-<!-- Tempusdominus Bootstrap 4 -->
-<script src="{{asset('backend/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js')}}"></script>
 <!-- Summernote -->
 <script src="{{asset('backend/plugins/summernote/summernote-bs4.min.js')}}"></script>
-<!-- overlayScrollbars -->
-<script src="{{asset('backend/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js')}}"></script>
 <!-- AdminLTE App -->
 <script src="{{asset('backend/dist/js/adminlte.js')}}"></script>
+<!-- BS-Stepper -->
+<script src="{{asset('backend/plugins/bs-stepper/js/bs-stepper.min.js')}}"></script>
 <!-- AdminLTE for demo purposes -->
 {{-- <script src="{{asset('backend/dist/js/demo.js')}}"></script> --}}
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="{{asset('backend/dist/js/pages/dashboard.js')}}"></script>
+{{-- <script src="{{asset('backend/dist/js/pages/dashboard.js')}}"></script> --}}
+<script src="{{asset('backend/plugins/datatables/jquery.dataTables.min.js')}}"></script>
+<script src="{{asset('backend/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js')}}"></script>
 <script src="{{asset('backend/plugins/select2/js/select2.full.min.js')}}"></script>
-<script src="{{asset('backend/plugins/sweetalert2/sweetalert2.min.js')}}"></script>
-<script src="{{asset('backend/plugins/toastr/toastr.min.js')}}"></script>
+
 <script type="text/javascript">
+  
   $(function () {
+    $.ajaxSetup({
+      headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+      }
+    });
     $(".summernote").summernote({
       height: 250
     });
-  });
+    $('#master').on('click', function(e) {
+     if($(this).is(':checked',true))  
+     {
+        $(".sub_chk").prop('checked', true);  
+     } else {  
+        $(".sub_chk").prop('checked',false);  
+     }  
+    });
+    $('.delete_all').on('click', function(e) {
+          var allVals = [];  
+          $(".sub_chk:checked").each(function() {  
+              allVals.push($(this).attr('data-id'));
+          });  
+          if(allVals.length <=0)  
+          {  
+             Toast.fire({
+                icon: 'warning',
+                title: 'Chưa chọn dòng nào để xóa !'
+            });
+          }  else {  
+
+
+              var check = confirm("Bạn có chắt xóa những dòng đã chọn?");  
+              if(check == true){  
+                  var join_selected_values = allVals.join(","); 
+                  $.ajax({
+                      url: $(this).data('url'),
+                      type: 'DELETE',
+                      headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
+                      data: 'ids='+join_selected_values,
+                      success: function (data) {
+                          if (data['success']) {
+                              $(".sub_chk:checked").each(function() {  
+                                  $(this).parents("tr").remove();
+                              });
+                              
+                              Toast.fire({
+                                  icon: 'success',
+                                  title: data['success']
+                              });
+                          } else if (data['error']) {
+                              
+                          } else {
+                              alert('Whoops Something went wrong!!');
+                          }
+                      },
+                      error: function (data) {
+                          alert(data.responseText);
+                      }
+                  });
+
+
+                $.each(allVals, function( index, value ) {
+                    $('table tr').filter("[data-row-id='" + value + "']").remove();
+                });
+              }  
+          }  
+      });
+    // $(document).ready(function(){
+    var phantrang = document.getElementById("PhanTrang");
+    if(phantrang){
+      $('#PhanTrang').DataTable({
+          'language': {
+              'sProcessing':   'Đang xử lý...',
+              'sLengthMenu':   'Hiển thị _MENU_ dòng',
+              'sZeroRecords':  'Không tìm thấy dòng nào phù hợp',
+              'sInfo':         'Đang xem _START_ đến _END_ trong tổng số _TOTAL_ dòng',
+              'sInfoEmpty':    'Đang xem 0 đến 0 trong tổng số 0 dòng',
+              'sInfoFiltered': '(được lọc từ _MAX_ dòng)',
+              'sInfoPostFix':  '',
+              'sSearch':       'Tìm kiếm:',
+              'paginate': {
+                  'previous': '<i class="fas fa-chevron-left"></i>',
+                  'next': '<i class="fas fa-chevron-right"></i>'
+                },
+              'sUrl':          ''
+
+          }
+      });
+    }
+    
+
+  });    
+     
 </script>
+
+
 @yield('js')
 </body>
 </html>
