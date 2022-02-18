@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Đồ án Nhóm</title>
+	<link rel="stylesheet" href="asset/css/bootstrap.min.css">
+	<link rel="stylesheet" href="asset/css/font-awesome.min.css">
+	<link rel="stylesheet" href="asset/css/slick.css">
+	<link rel="stylesheet" href="asset/css/slick-theme.css">
+	<link rel="stylesheet" href="asset/css/style.css">
+	<!--Google -Fonts-->
+	<link href='https://fonts.googleapis.com/css?family=Sintony:400,700&subset=latin-ext' rel='stylesheet'
+		type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+	<header>
+		<div class="header-top d-none d-sm-block bg-light">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 hidden-xs">
+						<div class="header-top-left">
+							<ul>
+								<li><a href="#"><img src="asset/img/iconsvg/fb.svg" width="13px"
+											height="14px"></img></a></li>
+								<li><a href="#"><img src="asset/img/iconsvg/twitter.svg" width="13px"
+											height="14px"></img></a></li>
+								<li><a href="#"><img src="asset/img/iconsvg/gg.svg" width="13px"
+											height="14px"></img></a></li>
+								<li><a href="#"><img src="asset/img/iconsvg/pinterest.svg" width="13px"
+											height="14px"></img></a></li>
+								<li><a href="#"><img src="asset/img/iconsvg/instagram.svg" width="13px"
+											height="14px"></img></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-6 hidden-xs">
+						<div class="header-top-right ">
+							<ul class="list-inline user-menu pull-right">
+								<li class="menu-item wish-list ">
+									<a href="wishlist.html">
+										<img src="asset/img/iconsvg/heart.svg" width="16px" height="16px"></img> Yêu
+										thích (0)
+									</a>
+								</li>
+								<li class="menu-item log-in">
+									<a href="#" data-toggle="modal" data-target="#modal-login">
+										<img src="asset/img/iconsvg/user.svg" width="16px" height="16px"></img></i> Đăng
+										Nhập
+									</a>
+
+									<div class="modal fade" id="modal-login" tabindex="-1" role="dialog"
+										aria-labelledby="modal-login" aria-hidden="true">
+										<div class="modal-dialog modal-dialog-scrollable modal-md" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h5 class="modal-title">Đăng Nhập</h5>
+													<button type="button" class="close" data-dismiss="modal"
+														aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<form action="">
+													<div class="modal-body">
+
+														<div class="form-group">
+															<label for="exampleInputEmail1">Tài khoản</label>
+															<input type="email" class="form-control"
+																id="exampleInputEmail1" aria-describedby="emailHelp"
+																placeholder="Enter email">
+														</div>
+														<div class="form-group">
+															<label for="exampleInputPassword1">Mật khẩu</label>
+															<input type="password" class="form-control"
+																id="exampleInputPassword1" placeholder="Password">
+														</div>
+														<div class="form-group row">
+															<div class="col">
+																<div class="form-group form-check">
+																	<input type="checkbox" class="form-check-input"
+																		id="exampleCheck1">
+																	<label class="form-check-label"
+																		for="exampleCheck1">Remember me</label>
+																</div>
+															</div>
+															<div class="col text-right">
+																<a href="register.html">Đăng kí ?</a>
+															</div>
+														</div>
+														<button class="btn btn-info col">Đăng nhâp</button>
+														<button class="btn btn-danger col mt-2"><i
+																class="fa fa-google"></i> Đăng nhâp bằng google</button>
+														<button class="btn btn-primary col mt-2"><i
+																class="fa fa-facebook"></i> Đăng nhâp bằng
+															facebook</button>
+														<button class="btn btn-primary col mt-2"><i
+																class="fa fa-comment"></i> Đăng nhâp bằng zalo</button>
+														<!-- end form login -->
+													</div>
+
+												</form>
+											</div>
+										</div>
+									</div>
+
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-middle bg-transparent">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-sm-12 col-xs-8  d-flex justify-content-center justify-content-lg-start">
+						<div class="header-logo">
+							<a href="index.html">
+								<!--logo-->
+
+								<svg width="100%" height="100%" viewBox="0 0 1431 212" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M0.141798 209V2.59999H115.942V23.9H24.1418V94.1H103.942V115.4H24.1418V187.7H115.942V209H0.141798ZM149.708 209V2.59999H173.708V187.1H255.308V209H149.708ZM281.989 209V2.59999H397.789V23.9H305.989V94.1H385.789V115.4H305.989V187.7H397.789V209H281.989ZM539.256 207.5C533.856 208.7 527.256 209.6 519.456 210.2C511.856 211 504.556 211.4 497.556 211.4C475.956 211.4 460.256 208.8 450.456 203.6C440.656 198.2 434.056 188.4 430.656 174.2C427.256 159.8 425.556 137 425.556 105.8C425.556 74.8 427.256 52.2 430.656 38C434.056 23.6 440.656 13.7 450.456 8.29999C460.456 2.89999 476.156 0.199988 497.556 0.199988C504.556 0.199988 511.856 0.599989 519.456 1.39999C527.256 2.19999 533.556 3.19999 538.356 4.39999V24.2C526.756 22.4 515.056 21.5 503.256 21.5C485.856 21.5 473.656 23.2 466.656 26.6C459.656 30 455.056 37.2 452.856 48.2C450.656 59.2 449.556 78.4 449.556 105.8C449.556 133.2 450.656 152.4 452.856 163.4C455.056 174.4 459.656 181.6 466.656 185C473.656 188.4 485.856 190.1 503.256 190.1C517.456 190.1 529.456 189.2 539.256 187.4V207.5ZM610.119 209V24.5H554.319V2.59999H689.919V24.5H634.119V209H610.119ZM827.312 209L798.512 126.8H793.412H741.212V209H717.212V2.59999H796.712C812.112 2.59999 823.612 5.19999 831.212 10.4C839.012 15.6 844.012 22.5 846.212 31.1C848.612 39.7 849.812 50.9 849.812 64.7C849.812 79.7 848.012 92.1 844.412 101.9C840.812 111.7 833.212 118.6 821.612 122.6L853.112 209H827.312ZM788.612 105.8C799.612 105.8 807.712 104.4 812.912 101.6C818.312 98.6 821.812 94.3 823.412 88.7C825.012 83.1 825.812 75.1 825.812 64.7C825.812 54.1 825.112 46.1 823.712 40.7C822.312 35.3 819.012 31.2 813.812 28.4C808.812 25.4 801.012 23.9 790.412 23.9H741.212V105.8H788.612ZM955.958 211.4C932.358 211.4 915.558 208.8 905.558 203.6C895.558 198.2 889.158 188.7 886.358 175.1C883.758 161.5 882.458 138.4 882.458 105.8C882.458 73.2 883.758 50.1 886.358 36.5C889.158 22.9 895.558 13.5 905.558 8.29999C915.558 2.89999 932.358 0.199988 955.958 0.199988C979.558 0.199988 996.258 2.89999 1006.06 8.29999C1016.06 13.5 1022.36 22.9 1024.96 36.5C1027.76 50.1 1029.16 73.2 1029.16 105.8C1029.16 138.4 1027.76 161.5 1024.96 175.1C1022.36 188.7 1016.06 198.2 1006.06 203.6C996.258 208.8 979.558 211.4 955.958 211.4ZM955.958 190.1C972.758 190.1 984.158 188.7 990.158 185.9C996.158 183.1 1000.16 176.3 1002.16 165.5C1004.16 154.7 1005.16 134.8 1005.16 105.8C1005.16 76.8 1004.16 56.9 1002.16 46.1C1000.16 35.3 996.158 28.5 990.158 25.7C984.158 22.9 972.758 21.5 955.958 21.5C939.158 21.5 927.658 22.9 921.458 25.7C915.458 28.5 911.458 35.3 909.458 46.1C907.458 56.9 906.458 76.8 906.458 105.8C906.458 134.8 907.458 154.7 909.458 165.5C911.458 176.3 915.458 183.1 921.458 185.9C927.658 188.7 939.158 190.1 955.958 190.1ZM1184.29 209L1093.09 50.6H1091.89V209H1068.79V2.59999H1093.39L1183.09 158H1184.29V2.59999H1207.69V209H1184.29ZM1253.22 209V2.59999H1277.22V209H1253.22ZM1430.79 207.5C1425.39 208.7 1418.79 209.6 1410.99 210.2C1403.39 211 1396.09 211.4 1389.09 211.4C1367.49 211.4 1351.79 208.8 1341.99 203.6C1332.19 198.2 1325.59 188.4 1322.19 174.2C1318.79 159.8 1317.09 137 1317.09 105.8C1317.09 74.8 1318.79 52.2 1322.19 38C1325.59 23.6 1332.19 13.7 1341.99 8.29999C1351.99 2.89999 1367.69 0.199988 1389.09 0.199988C1396.09 0.199988 1403.39 0.599989 1410.99 1.39999C1418.79 2.19999 1425.09 3.19999 1429.89 4.39999V24.2C1418.29 22.4 1406.59 21.5 1394.79 21.5C1377.39 21.5 1365.19 23.2 1358.19 26.6C1351.19 30 1346.59 37.2 1344.39 48.2C1342.19 59.2 1341.09 78.4 1341.09 105.8C1341.09 133.2 1342.19 152.4 1344.39 163.4C1346.59 174.4 1351.19 181.6 1358.19 185C1365.19 188.4 1377.39 190.1 1394.79 190.1C1408.99 190.1 1420.99 189.2 1430.79 187.4V207.5Z"
+										fill="black" class="star" />
+								</svg>
+
+
+								<style type="text/css">
+									.star {
+										fill: none;
+										stroke: #7d2d68;
+										stroke-width: 17px;
+
+										/* Stroke-dasharray property */
+										stroke-dasharray: 1353px;
+										stroke-dashoffset: 1353px;
+										animation: move 3s linear infinite;
+										animation-fill-mode: forwards;
+									}
+
+									@keyframes move {
+										100% {
+											stroke-dashoffset: 0;
+										}
+									}
+								</style>
+							</a>
+						</div>
+					</div>
+					<!-- hidden responsive -->
+					<div class=" col-12 col-lg-5 align-self-center">
+						<form action="search.html" method="get" class="">
+
+							<div class="has-search">
+								<span class="fa fa-search form-control-feedback"></span>
+								<input type="text" class="form-control" placeholder="Search">
+
+
+							</div>
+
+							<select name="" id="select-type-search">
+								<option value="" type="submit" href="search.html">Tất cả</option>
+							</select>
+
+						</form>
+					</div>
+
+					<div class="col-4 d-none d-lg-block align-self-center cart">
+						<ul class="d-flex justify-content-center align-items-center">
+							<li>
+								<a href="cart.html">
+									<img src="asset/img/iconsvg/cart.svg" width="30px" height="30px">
+									<span>Giỏ hàng</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" data-toggle="modal" data-target="#modal-login">
+									<img src="asset/img/iconsvg/tien.svg" width="30px" height="30px">
+									<span>Bán hàng</span>
+								</a>
+							</li>
+						</ul>
+
+
+
+
+
+					</div>
+					<!-- end -->
+
+				</div>
+			</div>
+		</div>
+
+	</header>
+	<nav class="navbar">
+		<div class="container-fluid">
+			<ul class="exo-menu">
+				<li><a class="active" href="index.html"> <i class="fa fa-home"></i> Trang chủ</a></li>
+				<li class="d-lg-none d-md-block"><a href="wishlist.html"><i class="fa fa-shopping-cart"></i>Giỏ hàng</a>
+				</li>
+				<li class="drop-down"><a href="shop.html"><i class="fa fa-list"></i> Danh mục</a>
+					<!--Drop Down-->
+					<ul class="drop-down-ul animated fadeIn">
+						<li class="flyout-right"><a href="#">LapTop <i class="fa fa-chevron-right"
+									style="position: absolute ;right: 0;"></i></a>
+							<!--Flyout Right-->
+							<ul class="animated fadeIn">
+								<li><a href="shop.html">DELL</a></li>
+								<li><a href="shop.html">ASUS</a></li>
+								<li><a href="shop.html">MACBOOK</a></li>
+								<li><a href="shop.html">.....</a></li>
+							</ul>
+						</li>
+						<li class="flyout-right"><a href="#">Máy FAX<i class="fa fa-chevron-right"
+									style="position: absolute ;right: 0;"></i></a>
+							<!--Flyout Right-->
+							<ul class="animated fadeIn">
+								<li><a href="shop.html">Fax in nhiệt</a></li>
+								<li><a href="shop.html">Fax in phim</a></li>
+								<li><a href="shop.html">Fax in laser</a></li>
+								<li><a href="shop.html">Fax in phun</a></li>
+							</ul>
+						</li>
+						<li class="flyout-right"><a href="shop.html">Điện Thoại <i class="fa fa-chevron-right"
+									style="position: absolute ;right: 0;"></i></a>
+							<!--Flyout Right-->
+							<ul class="animated fadeIn">
+								<li><a href="shop.html">Iphone</a></li>
+								<li><a href="shop.html">Xiaomi</a></li>
+								<li><a href="shop.html">Vivo</a></li>
+							</ul>
+						</li>
+						<li class="flyout-right"><a href="shop.html">Linh Kiện <i class="fa fa-chevron-right"
+									style="position: absolute ;right: 0;"></i></a>
+							<!--Flyout Right-->
+							<ul class="animated fadeIn">
+								<li><a href="shop.html">Tai Nghe</a></li>
+								<li><a href="shop.html">Loa Ngoài</a></li>
+							</ul>
+						</li>
+					</ul>
+					<!--//End drop down-->
+
+				</li>
+
+				<li class="mega-drop-down"><a href="#"><i class="fa fa-list"></i> SALE OF</a>
+					<div class="animated fadeIn mega-menu">
+						<div class="mega-menu-wrap">
+							<div class="row">
+								<div class="col-md-4">
+									<h4 class="row mega-title">Sự kiện hot</h4>
+									<img class="img-responsive" src="asset/img/banner-4.png">
+								</div>
+								<div class="col-md-8">
+									<h4 class="row mega-title">Khuyến mãi sản phẩm</h4>
+									<ul class="stander">
+										<li><a href="#">- Đón Giáng Sinh - Rinh khuyến mãi giảm đến 50% tại Điện máy
+												XANH</a></li>
+										<li><a href="#">- Giảm giá 10% - 40% tất cả các sản phẩm máy lọc nước, cây nước
+												nóng lạnh thương hiệu Kangaroo.</a></li>
+										<li><a href="#">- Dòng sản phẩm thiết bị mùa đông giảm giá tới 40%</a></li>
+										<li><a href="#">- SIÊU KHUYẾN MẠI VÀ NHẬN NGAY QUÀ TẶNG KHỦNG KHI MUA MÁY TÍNH
+												TẠI ELECTRONIC!!</a></li>
+
+										<li><a class="view-more btn- btn-sm" href="#">Xem thêm</a></li>
+									</ul>
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+				</li>
+				<li><a href="shop.html"><i class="fa fa-list"></i> SHOP</a></li>
+
+				<li><a href="" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-list"></i> THÔNG
+						BÁO</a></li>
+				<li><a href="about.html"><i class="fa fa-list"></i> GIỚI THIỆU</a></li>
+				<li><a href="404.html"><i class="fa fa-list"></i>Comming soon...</a></li>
+				<a href="#" class="toggle-menu d-md-none">Menu <i class="fa fa-bars"></i></a>
+			</ul>
+		</div>
+		<!-- khuyến mãi -->
+		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+			aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLongTitle">Thông Báo</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<img class="img-responsive" src="asset/img/bgtb.jpg">
+						<h4 class="row mega-title">Khuyến mãi sản phẩm</h4>
+						<ul class="stander">
+							<li><a>- Đón Giáng Sinh - Rinh khuyến mãi giảm đến 50% tại Điện máy XANH</a></li>
+							<li><a>- Giảm giá 10% - 40% tất cả các sản phẩm máy lọc nước, cây nước nóng lạnh thương hiệu
+									Kangaroo.</a></li>
+							<li><a>- Dòng sản phẩm thiết bị mùa đông giảm giá tới 40%</a></li>
+							<li><a>- SIÊU KHUYẾN MẠI VÀ NHẬN NGAY QUÀ TẶNG KHỦNG KHI MUA MÁY TÍNH TẠI ELECTRONIC!!</a>
+							</li>
+
+
+						</ul>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /khuyến mãi -->
+	</nav>
+	<main class="container-fluid">
+		<section class="row p-0">
+			<div class="col ">
+				<ol class="breadcrumb bg-white">
+					<li class="breadcrumb-item"><a class="text-dark" href="#"><i class="fa fa-home"></i> Home</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Shop</li>
+				</ol>
+			</div>
+		</section>
+		<section class="row p-0">
+			<aside class="col-md-3">
+				<div class="card">
+					<!-- Tìm kiếm theo tên sản phẩm -->
+					<article class="card-group-item">
+						
+						<h6 class="card-header">Tên sản phẩm </h6>
+						
+						<div class="filter-content">
+							<div class="card-body">
+								<input class="form-control" type="text" placeholder="Tìm kiếm" aria-label="Search"
+									name="keyword_tensanpham" value="">
+							</div> <!-- card-body.// -->
+						</div>
+					</article> <!-- // Tìm kiếm theo Tên sản phẩm -->
+
+					<!-- Tìm kiếm theo Loại sản phẩm -->
+					<article class="card-group-item">
+						<h6 class="card-header">Loại sản phẩm </h6>
+						<div class="filter-content">
+							<div class="card-body">
+								<div class="custom-control custom-checkbox">
+									<span class="float-right badge badge-light round">3</span>
+									<input type="checkbox" class="custom-control-input" name="keyword_loaisanpham[]"
+										value="1" id="chk-loaisanpham-1">
+									<label class="custom-control-label" for="chk-loaisanpham-1">Máy tính
+										bảng</label>
+								</div> <!-- form-check.// -->
+								<div class="custom-control custom-checkbox">
+									<span class="float-right badge badge-light round">1</span>
+									<input type="checkbox" class="custom-control-input" name="keyword_loaisanpham[]"
+										value="2" id="chk-loaisanpham-2">
+									<label class="custom-control-label" for="chk-loaisanpham-2">Máy tính xách
+										tay</label>
+								</div> <!-- form-check.// -->
+								<div class="custom-control custom-checkbox">
+									<span class="float-right badge badge-light round">4</span>
+									<input type="checkbox" class="custom-control-input" name="keyword_loaisanpham[]"
+										value="3" id="chk-loaisanpham-3">
+									<label class="custom-control-label" for="chk-loaisanpham-3">Điện
+										thoại</label>
+								</div> <!-- form-check.// -->
+								<div class="custom-control custom-checkbox">
+									<span class="float-right badge badge-light round">1</span>
+									<input type="checkbox" class="custom-control-input" name="keyword_loaisanpham[]"
+										value="4" id="chk-loaisanpham-4">
+									<label class="custom-control-label" for="chk-loaisanpham-4">Linh phụ
+										kiện</label>
+								</div> <!-- form-check.// -->
+							</div> <!-- card-body.// -->
+						</div>
+					</article> <!-- // Tìm kiếm theo Loại sản phẩm -->
+
+					<!-- Tìm kiếm theo Nhà sản xuất -->
+					<article class="card-group-item">
+						<h6 class="card-header">Nhà sản xuất </h6>
+						<div class="filter-content">
+							<div class="card-body">
+								<div class="custom-control custom-checkbox">
+									<span class="float-right badge badge-light round">3</span>
+									<input type="checkbox" class="custom-control-input" name="keyword_nhasanxuat[]"
+										value="1" id="chk-nhasanxuat-1">
+									<label class="custom-control-label" for="chk-nhasanxuat-1">Apple</label>
+								</div> <!-- form-check.// -->
+								<div class="custom-control custom-checkbox">
+									<span class="float-right badge badge-light round">3</span>
+									<input type="checkbox" class="custom-control-input" name="keyword_nhasanxuat[]"
+										value="2" id="chk-nhasanxuat-2">
+									<label class="custom-control-label" for="chk-nhasanxuat-2">Samsung</label>
+								</div> <!-- form-check.// -->
+								<div class="custom-control custom-checkbox">
+									<span class="float-right badge badge-light round">1</span>
+									<input type="checkbox" class="custom-control-input" name="keyword_nhasanxuat[]"
+										value="3" id="chk-nhasanxuat-3">
+									<label class="custom-control-label" for="chk-nhasanxuat-3">HTC</label>
+								</div> <!-- form-check.// -->
+								<div class="custom-control custom-checkbox">
+									<span class="float-right badge badge-light round">1</span>
+									<input type="checkbox" class="custom-control-input" name="keyword_nhasanxuat[]"
+										value="4" id="chk-nhasanxuat-4">
+									<label class="custom-control-label" for="chk-nhasanxuat-4">Nokia</label>
+								</div> <!-- form-check.// -->
+							</div> <!-- card-body.// -->
+						</div>
+					</article> <!-- // Tìm kiếm theo Nhà sản xuất -->
+
+					<!-- Tìm kiếm theo Khuyến mãi -->
+					<article class="card-group-item">
+						<h6 class="card-header">Khuyến mãi </h6>
+						<div class="filter-content">
+							<div class="card-body">
+							</div> <!-- card-body.// -->
+						</div>
+					</article> <!-- // Tìm kiếm theo Nhà sản xuất -->
+
+					<!-- Tìm kiếm theo khoảng giá tiền -->
+					<article class="card-group-item">
+						<h6 class="card-header">Lọc theo giá </h6>
+						<div class="filter-content">
+							<div class="card-body">
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<label>Từ</label>
+										<input type="range" class="custom-range" min="0" max="50000000" step="100000"
+											id="sotientu" name="keyword_sotientu" value="0">
+										<span><span id="sotientu-text">0</span></span>
+									</div>
+									<div class="form-group col-md-6 text-right">
+										<label>Đến</label>
+										<input type="range" class="custom-range" min="0" max="50000000" step="100000"
+											id="sotienden" name="keyword_sotienden" value="50000000">
+										<span><span id="sotienden-text">50000000</span></span>
+									</div>
+								</div>
+							</div> <!-- card-body.// -->
+						</div>
+					</article> <!-- // Tìm kiếm theo khoảng giá tiền -->
+
+					<!-- Tìm kiếm theo màu sắc sản phẩm -->
+					<article class="card-group-item">
+						<h6 class="card-header">Màu sắc </h6>
+						<div class="filter-content">
+							<div class="card-body">
+								<label class="btn btn-danger">
+									<input class="" type="checkbox" value="">
+									<span class="form-check-label">Đỏ</span>
+								</label>
+								<label class="btn btn-success">
+									<input class="" type="checkbox" value="">
+									<span class="form-check-label">Xanh lá</span>
+								</label>
+								<label class="btn btn-primary">
+									<input class="" type="checkbox" value="">
+									<span class="form-check-label">Xanh dương</span>
+								</label>
+							</div> <!-- card-body.// -->
+						</div>
+					</article> <!-- // Tìm kiếm theo màu sắc sản phẩm -->
+					<article class="card-group-item">
+						<h6 class="card-header">Đang giảm giá </h6>
+						<div class="filter-content">
+							<div class="card-body">
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="asset/img/product01.png" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Category</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del>
+										</h4>
+									</div>
+								</div>
+
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="asset/img/product02.png" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Category</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del>
+										</h4>
+									</div>
+								</div>
+
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="asset/img/product03.png" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Category</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del>
+										</h4>
+									</div>
+								</div>
+							</div> <!-- card-body.// -->
+						</div>
+					</article>
+				</div>
+			</aside>
+			<div class="col-md-9" id="store">
+				<div class="row">
+					<article class="single-product-inner col-6 col-sm-4 col-md-4 col-lg-3">
+						<div class="single-product">
+							<div class="product-thumbnail-wrapper">
+								<a href="detail.html">
+									
+									<div class="_3NVV-i">
+										<div class="_3yCxz- _3aFlEb _3Kq1-f">
+											<span class="percent">50%</span>
+											<span class="WL8HRl">giảm</span>
+										</div>
+									</div>
+								
+									<div class="product-image d-flex justify-content-center">
+										<img src="asset/img/product03.png" />
+									</div>
+								</a>
+								<div class="product-button-list">
+									<div class="add-to-cart-list">
+										<a href="#" class="btn-product btn-cart">
+											<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+										</a>
+									</div>
+									<div class="product-button-group">
+										<a href="#" class="add-to-wishlist"><i class="fa fa-heart"
+												aria-hidden="true"></i></a>
+										<a href="#" class="add-to-compare"><i class="fa fa-refresh"
+												aria-hidden="true"></i></a>
+										<a data-target="#productModal" class="btn-quickview" data-toggle="modal"
+											title="Quick view" href="#"><i aria-hidden="true"
+												class="fa fa-search"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="product-details-content text-center">
+								<div class="ratting">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<a href="#" class="heading-title">Asus Zenbook 14 Q408UG</a>
+								<p class="product-short-content">Ultrabook cao cấp mỏng nhẹ, hiệu năng cao, HOT nhất 2021…
+								</p>
+								<span class="price">
+									<del class="amount">21.990.000 đ</del>
+									<span class="amount">20.990.000 đ</span>
+								</span>
+							</div>
+						</div>
+					</article>
+					<article class="single-product-inner col-6 col-sm-4 col-md-4 col-lg-3">
+						<div class="single-product">
+							<div class="product-thumbnail-wrapper">
+								<a href="detail.html">
+									<div class="product-label">
+										<span class="featured">New</span>
+									</div>
+									<div class="product-image d-flex justify-content-center">
+										<img src="asset/img/product02.png" />
+									</div>
+								</a>
+								<div class="product-button-list">
+									<div class="add-to-cart-list">
+										<a href="#" class="btn-product btn-cart">
+											<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+										</a>
+									</div>
+									<div class="product-button-group">
+										<a href="#" class="add-to-wishlist"><i class="fa fa-heart"
+												aria-hidden="true"></i></a>
+										<a href="#" class="add-to-compare"><i class="fa fa-refresh"
+												aria-hidden="true"></i></a>
+										<a data-target="#productModal" class="btn-quickview" data-toggle="modal"
+											title="Quick view" href="#"><i aria-hidden="true" class="fa fa-search"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="product-details-content text-center">
+								<div class="ratting">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<a href="#" class="heading-title">Tai nghe Skullcandy Crusher ANC</a>
+								<p class="product-short-content">công nghệ mới và những cải thiện về chất âm vô cùng đáng sở hữu…</p>
+								<span class="price">
+									<del class="amount">8.206.000 đ</del>
+									<span class="amount">6.590.000 đ</span>
+								</span>
+							</div>
+						</div>
+					</article>
+					<article class="single-product-inner col-6 col-sm-4 col-md-4 col-lg-3">
+						<div class="single-product">
+							<div class="product-thumbnail-wrapper">
+								<a href="detail.html">
+									<span class="icon-hot position-absolute" style="top:10px;left: 10px;"></span>
+									<div class="product-image d-flex justify-content-center">
+										<img src="asset/img/product02.png" />
+									</div>
+								</a>
+								<div class="product-button-list">
+									<div class="add-to-cart-list">
+										<a href="#" class="btn-product btn-cart">
+											<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+										</a>
+									</div>
+									<div class="product-button-group">
+										<a href="#" class="add-to-wishlist"><i class="fa fa-heart"
+												aria-hidden="true"></i></a>
+										<a href="#" class="add-to-compare"><i class="fa fa-refresh"
+												aria-hidden="true"></i></a>
+										<a data-target="#productModal" class="btn-quickview" data-toggle="modal"
+											title="Quick view" href="#"><i aria-hidden="true" class="fa fa-search"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="product-details-content text-center">
+								<div class="ratting">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<a href="#" class="heading-title">Tai nghe Skullcandy Crusher ANC</a>
+								<p class="product-short-content">công nghệ mới và những cải thiện về chất âm vô cùng đáng sở hữu…</p>
+								<span class="price">
+									<del class="amount">8.206.000 đ</del>
+									<span class="amount">6.590.000 đ</span>
+								</span>
+							</div>
+						</div>
+					</article>
+					<article class="single-product-inner col-6 col-sm-4 col-md-4 col-lg-3">
+						<div class="single-product">
+							<div class="product-thumbnail-wrapper">
+								<a href="detail.html">
+									
+									<div class="_3NVV-i">
+										<div class="_3yCxz- _3aFlEb _3Kq1-f">
+											<span class="percent">50%</span>
+											<span class="WL8HRl">giảm</span>
+										</div>
+									</div>
+								
+									<div class="product-image d-flex justify-content-center">
+										<img src="asset/img/product03.png" />
+									</div>
+								</a>
+								<div class="product-button-list">
+									<div class="add-to-cart-list">
+										<a href="#" class="btn-product btn-cart">
+											<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+										</a>
+									</div>
+									<div class="product-button-group">
+										<a href="#" class="add-to-wishlist"><i class="fa fa-heart"
+												aria-hidden="true"></i></a>
+										<a href="#" class="add-to-compare"><i class="fa fa-refresh"
+												aria-hidden="true"></i></a>
+										<a data-target="#productModal" class="btn-quickview" data-toggle="modal"
+											title="Quick view" href="#"><i aria-hidden="true"
+												class="fa fa-search"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="product-details-content text-center">
+								<div class="ratting">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<a href="#" class="heading-title">Asus Zenbook 14 Q408UG</a>
+								<p class="product-short-content">Ultrabook cao cấp mỏng nhẹ, hiệu năng cao, HOT nhất 2021…
+								</p>
+								<span class="price">
+									<del class="amount">21.990.000 đ</del>
+									<span class="amount">20.990.000 đ</span>
+								</span>
+							</div>
+						</div>
+					</article>
+					<article class="single-product-inner col-6 col-sm-4 col-md-4 col-lg-3">
+						<div class="single-product">
+							<div class="product-thumbnail-wrapper">
+								<a href="detail.html">
+									
+									<div class="_3NVV-i">
+										<div class="_3yCxz- _3aFlEb _3Kq1-f">
+											<span class="percent">50%</span>
+											<span class="WL8HRl">giảm</span>
+										</div>
+									</div>
+								
+									<div class="product-image d-flex justify-content-center">
+										<img src="asset/img/product03.png" />
+									</div>
+								</a>
+								<div class="product-button-list">
+									<div class="add-to-cart-list">
+										<a href="#" class="btn-product btn-cart">
+											<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+										</a>
+									</div>
+									<div class="product-button-group">
+										<a href="#" class="add-to-wishlist"><i class="fa fa-heart"
+												aria-hidden="true"></i></a>
+										<a href="#" class="add-to-compare"><i class="fa fa-refresh"
+												aria-hidden="true"></i></a>
+										<a data-target="#productModal" class="btn-quickview" data-toggle="modal"
+											title="Quick view" href="#"><i aria-hidden="true"
+												class="fa fa-search"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="product-details-content text-center">
+								<div class="ratting">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<a href="#" class="heading-title">Asus Zenbook 14 Q408UG</a>
+								<p class="product-short-content">Ultrabook cao cấp mỏng nhẹ, hiệu năng cao, HOT nhất 2021…
+								</p>
+								<span class="price">
+									<del class="amount">21.990.000 đ</del>
+									<span class="amount">20.990.000 đ</span>
+								</span>
+							</div>
+						</div>
+					</article>
+					<article class="single-product-inner col-6 col-sm-4 col-md-4 col-lg-3">
+						<div class="single-product">
+							<div class="product-thumbnail-wrapper">
+								<a href="detail.html">
+									<div class="product-label">
+										<span class="featured">New</span>
+									</div>
+									<div class="product-image d-flex justify-content-center">
+										<img src="asset/img/product02.png" />
+									</div>
+								</a>
+								<div class="product-button-list">
+									<div class="add-to-cart-list">
+										<a href="#" class="btn-product btn-cart">
+											<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+										</a>
+									</div>
+									<div class="product-button-group">
+										<a href="#" class="add-to-wishlist"><i class="fa fa-heart"
+												aria-hidden="true"></i></a>
+										<a href="#" class="add-to-compare"><i class="fa fa-refresh"
+												aria-hidden="true"></i></a>
+										<a data-target="#productModal" class="btn-quickview" data-toggle="modal"
+											title="Quick view" href="#"><i aria-hidden="true" class="fa fa-search"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="product-details-content text-center">
+								<div class="ratting">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<a href="#" class="heading-title">Tai nghe Skullcandy Crusher ANC</a>
+								<p class="product-short-content">công nghệ mới và những cải thiện về chất âm vô cùng đáng sở hữu…</p>
+								<span class="price">
+									<del class="amount">8.206.000 đ</del>
+									<span class="amount">6.590.000 đ</span>
+								</span>
+							</div>
+						</div>
+					</article>
+					<article class="single-product-inner col-6 col-sm-4 col-md-4 col-lg-3">
+						<div class="single-product">
+							<div class="product-thumbnail-wrapper">
+								<a href="detail.html">
+									<span class="icon-hot position-absolute" style="top:10px;left: 10px;"></span>
+									<div class="product-image d-flex justify-content-center">
+										<img src="asset/img/product02.png" />
+									</div>
+								</a>
+								<div class="product-button-list">
+									<div class="add-to-cart-list">
+										<a href="#" class="btn-product btn-cart">
+											<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+										</a>
+									</div>
+									<div class="product-button-group">
+										<a href="#" class="add-to-wishlist"><i class="fa fa-heart"
+												aria-hidden="true"></i></a>
+										<a href="#" class="add-to-compare"><i class="fa fa-refresh"
+												aria-hidden="true"></i></a>
+										<a data-target="#productModal" class="btn-quickview" data-toggle="modal"
+											title="Quick view" href="#"><i aria-hidden="true" class="fa fa-search"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="product-details-content text-center">
+								<div class="ratting">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<a href="#" class="heading-title">Tai nghe Skullcandy Crusher ANC</a>
+								<p class="product-short-content">công nghệ mới và những cải thiện về chất âm vô cùng đáng sở hữu…</p>
+								<span class="price">
+									<del class="amount">8.206.000 đ</del>
+									<span class="amount">6.590.000 đ</span>
+								</span>
+							</div>
+						</div>
+					</article>
+					<article class="single-product-inner col-6 col-sm-4 col-md-4 col-lg-3">
+						<div class="single-product">
+							<div class="product-thumbnail-wrapper">
+								<a href="detail.html">
+									
+									<div class="_3NVV-i">
+										<div class="_3yCxz- _3aFlEb _3Kq1-f">
+											<span class="percent">50%</span>
+											<span class="WL8HRl">giảm</span>
+										</div>
+									</div>
+								
+									<div class="product-image d-flex justify-content-center">
+										<img src="asset/img/product03.png" />
+									</div>
+								</a>
+								<div class="product-button-list">
+									<div class="add-to-cart-list">
+										<a href="#" class="btn-product btn-cart">
+											<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+										</a>
+									</div>
+									<div class="product-button-group">
+										<a href="#" class="add-to-wishlist"><i class="fa fa-heart"
+												aria-hidden="true"></i></a>
+										<a href="#" class="add-to-compare"><i class="fa fa-refresh"
+												aria-hidden="true"></i></a>
+										<a data-target="#productModal" class="btn-quickview" data-toggle="modal"
+											title="Quick view" href="#"><i aria-hidden="true"
+												class="fa fa-search"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="product-details-content text-center">
+								<div class="ratting">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+							<a href="#" class="heading-title">Asus Zenbook 14 Q408UG</a>
+								<p class="product-short-content">Ultrabook cao cấp mỏng nhẹ, hiệu năng cao, HOT nhất 2021…
+								</p>
+								<span class="price">
+									<del class="amount">21.990.000 đ</del>
+									<span class="amount">20.990.000 đ</span>
+								</span>
+							</div>
+						</div>
+					</article>
+					<article class="single-product-inner col-6 col-sm-4 col-md-4 col-lg-3">
+						<div class="single-product">
+							<div class="product-thumbnail-wrapper">
+								<a href="detail.html">
+									
+									<div class="_3NVV-i">
+										<div class="_3yCxz- _3aFlEb _3Kq1-f">
+											<span class="percent">50%</span>
+											<span class="WL8HRl">giảm</span>
+										</div>
+									</div>
+								
+									<div class="product-image d-flex justify-content-center">
+										<img src="asset/img/product03.png" />
+									</div>
+								</a>
+								<div class="product-button-list">
+									<div class="add-to-cart-list">
+										<a href="#" class="btn-product btn-cart">
+											<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+										</a>
+									</div>
+									<div class="product-button-group">
+										<a href="#" class="add-to-wishlist"><i class="fa fa-heart"
+												aria-hidden="true"></i></a>
+										<a href="#" class="add-to-compare"><i class="fa fa-refresh"
+												aria-hidden="true"></i></a>
+										<a data-target="#productModal" class="btn-quickview" data-toggle="modal"
+											title="Quick view" href="#"><i aria-hidden="true"
+												class="fa fa-search"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="product-details-content text-center">
+								<div class="ratting">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<a href="#" class="heading-title">Asus Zenbook 14 Q408UG</a>
+								<p class="product-short-content">Ultrabook cao cấp mỏng nhẹ, hiệu năng cao, HOT nhất 2021…
+								</p>
+								<span class="price">
+									<del class="amount">21.990.000 đ</del>
+									<span class="amount">20.990.000 đ</span>
+								</span>
+							</div>
+						</div>
+					</article>
+					<article class="single-product-inner col-6 col-sm-4 col-md-4 col-lg-3">
+						<div class="single-product">
+							<div class="product-thumbnail-wrapper">
+								<a href="detail.html">
+									<div class="product-label">
+										<span class="featured">New</span>
+									</div>
+									<div class="product-image d-flex justify-content-center">
+										<img src="asset/img/product02.png" />
+									</div>
+								</a>
+								<div class="product-button-list">
+									<div class="add-to-cart-list">
+										<a href="#" class="btn-product btn-cart">
+											<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+										</a>
+									</div>
+									<div class="product-button-group">
+										<a href="#" class="add-to-wishlist"><i class="fa fa-heart"
+												aria-hidden="true"></i></a>
+										<a href="#" class="add-to-compare"><i class="fa fa-refresh"
+												aria-hidden="true"></i></a>
+										<a data-target="#productModal" class="btn-quickview" data-toggle="modal"
+											title="Quick view" href="#"><i aria-hidden="true" class="fa fa-search"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="product-details-content text-center">
+								<div class="ratting">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<a href="#" class="heading-title">Tai nghe Skullcandy Crusher ANC</a>
+								<p class="product-short-content">công nghệ mới và những cải thiện về chất âm vô cùng đáng sở hữu…</p>
+								<span class="price">
+									<del class="amount">8.206.000 đ</del>
+									<span class="amount">6.590.000 đ</span>
+								</span>
+							</div>
+						</div>
+					</article>
+					<article class="single-product-inner col-6 col-sm-4 col-md-4 col-lg-3">
+						<div class="single-product">
+							<div class="product-thumbnail-wrapper">
+								<a href="detail.html">
+									<span class="icon-hot position-absolute" style="top:10px;left: 10px;"></span>
+									<div class="product-image d-flex justify-content-center">
+										<img src="asset/img/product02.png" />
+									</div>
+								</a>
+								<div class="product-button-list">
+									<div class="add-to-cart-list">
+										<a href="#" class="btn-product btn-cart">
+											<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+										</a>
+									</div>
+									<div class="product-button-group">
+										<a href="#" class="add-to-wishlist"><i class="fa fa-heart"
+												aria-hidden="true"></i></a>
+										<a href="#" class="add-to-compare"><i class="fa fa-refresh"
+												aria-hidden="true"></i></a>
+										<a data-target="#productModal" class="btn-quickview" data-toggle="modal"
+											title="Quick view" href="#"><i aria-hidden="true" class="fa fa-search"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="product-details-content text-center">
+								<div class="ratting">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<a href="#" class="heading-title">Tai nghe Skullcandy Crusher ANC</a>
+								<p class="product-short-content">công nghệ mới và những cải thiện về chất âm vô cùng đáng sở hữu…</p>
+								<span class="price">
+									<del class="amount">8.206.000 đ</del>
+									<span class="amount">6.590.000 đ</span>
+								</span>
+							</div>
+						</div>
+					</article>
+					<article class="single-product-inner col-6 col-sm-4 col-md-4 col-lg-3">
+						<div class="single-product">
+							<div class="product-thumbnail-wrapper">
+								<a href="detail.html">
+									
+									<div class="_3NVV-i">
+										<div class="_3yCxz- _3aFlEb _3Kq1-f">
+											<span class="percent">50%</span>
+											<span class="WL8HRl">giảm</span>
+										</div>
+									</div>
+								
+									<div class="product-image d-flex justify-content-center">
+										<img src="asset/img/product03.png" />
+									</div>
+								</a>
+								<div class="product-button-list">
+									<div class="add-to-cart-list">
+										<a href="#" class="btn-product btn-cart">
+											<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+										</a>
+									</div>
+									<div class="product-button-group">
+										<a href="#" class="add-to-wishlist"><i class="fa fa-heart"
+												aria-hidden="true"></i></a>
+										<a href="#" class="add-to-compare"><i class="fa fa-refresh"
+												aria-hidden="true"></i></a>
+										<a data-target="#productModal" class="btn-quickview" data-toggle="modal"
+											title="Quick view" href="#"><i aria-hidden="true"
+												class="fa fa-search"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="product-details-content text-center">
+								<div class="ratting">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+							<a href="#" class="heading-title">Asus Zenbook 14 Q408UG</a>
+								<p class="product-short-content">Ultrabook cao cấp mỏng nhẹ, hiệu năng cao, HOT nhất 2021…
+								</p>
+								<span class="price">
+									<del class="amount">21.990.000 đ</del>
+									<span class="amount">20.990.000 đ</span>
+								</span>
+							</div>
+						</div>
+					</article>
+					<article class="single-product-inner col-6 col-sm-4 col-md-4 col-lg-3">
+						<div class="single-product">
+							<div class="product-thumbnail-wrapper">
+								<a href="detail.html">
+									
+									<div class="_3NVV-i">
+										<div class="_3yCxz- _3aFlEb _3Kq1-f">
+											<span class="percent">50%</span>
+											<span class="WL8HRl">giảm</span>
+										</div>
+									</div>
+								
+									<div class="product-image d-flex justify-content-center">
+										<img src="asset/img/product03.png" />
+									</div>
+								</a>
+								<div class="product-button-list">
+									<div class="add-to-cart-list">
+										<a href="#" class="btn-product btn-cart">
+											<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+										</a>
+									</div>
+									<div class="product-button-group">
+										<a href="#" class="add-to-wishlist"><i class="fa fa-heart"
+												aria-hidden="true"></i></a>
+										<a href="#" class="add-to-compare"><i class="fa fa-refresh"
+												aria-hidden="true"></i></a>
+										<a data-target="#productModal" class="btn-quickview" data-toggle="modal"
+											title="Quick view" href="#"><i aria-hidden="true"
+												class="fa fa-search"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="product-details-content text-center">
+								<div class="ratting">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<a href="#" class="heading-title">Asus Zenbook 14 Q408UG</a>
+								<p class="product-short-content">Ultrabook cao cấp mỏng nhẹ, hiệu năng cao, HOT nhất 2021…
+								</p>
+								<span class="price">
+									<del class="amount">21.990.000 đ</del>
+									<span class="amount">20.990.000 đ</span>
+								</span>
+							</div>
+						</div>
+					</article>
+					<article class="single-product-inner col-6 col-sm-4 col-md-4 col-lg-3">
+						<div class="single-product">
+							<div class="product-thumbnail-wrapper">
+								<a href="detail.html">
+									<div class="product-label">
+										<span class="featured">New</span>
+									</div>
+									<div class="product-image d-flex justify-content-center">
+										<img src="asset/img/product02.png" />
+									</div>
+								</a>
+								<div class="product-button-list">
+									<div class="add-to-cart-list">
+										<a href="#" class="btn-product btn-cart">
+											<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+										</a>
+									</div>
+									<div class="product-button-group">
+										<a href="#" class="add-to-wishlist"><i class="fa fa-heart"
+												aria-hidden="true"></i></a>
+										<a href="#" class="add-to-compare"><i class="fa fa-refresh"
+												aria-hidden="true"></i></a>
+										<a data-target="#productModal" class="btn-quickview" data-toggle="modal"
+											title="Quick view" href="#"><i aria-hidden="true" class="fa fa-search"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="product-details-content text-center">
+								<div class="ratting">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<a href="#" class="heading-title">Tai nghe Skullcandy Crusher ANC</a>
+								<p class="product-short-content">công nghệ mới và những cải thiện về chất âm vô cùng đáng sở hữu…</p>
+								<span class="price">
+									<del class="amount">8.206.000 đ</del>
+									<span class="amount">6.590.000 đ</span>
+								</span>
+							</div>
+						</div>
+					</article>
+					<article class="single-product-inner col-6 col-sm-4 col-md-4 col-lg-3">
+						<div class="single-product">
+							<div class="product-thumbnail-wrapper">
+								<a href="detail.html">
+									<span class="icon-hot position-absolute" style="top:10px;left: 10px;"></span>
+									<div class="product-image d-flex justify-content-center">
+										<img src="asset/img/product02.png" />
+									</div>
+								</a>
+								<div class="product-button-list">
+									<div class="add-to-cart-list">
+										<a href="#" class="btn-product btn-cart">
+											<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+										</a>
+									</div>
+									<div class="product-button-group">
+										<a href="#" class="add-to-wishlist"><i class="fa fa-heart"
+												aria-hidden="true"></i></a>
+										<a href="#" class="add-to-compare"><i class="fa fa-refresh"
+												aria-hidden="true"></i></a>
+										<a data-target="#productModal" class="btn-quickview" data-toggle="modal"
+											title="Quick view" href="#"><i aria-hidden="true" class="fa fa-search"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="product-details-content text-center">
+								<div class="ratting">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<a href="#" class="heading-title">Tai nghe Skullcandy Crusher ANC</a>
+								<p class="product-short-content">công nghệ mới và những cải thiện về chất âm vô cùng đáng sở hữu…</p>
+								<span class="price">
+									<del class="amount">8.206.000 đ</del>
+									<span class="amount">6.590.000 đ</span>
+								</span>
+							</div>
+						</div>
+					</article>
+					<article class="single-product-inner col-6 col-sm-4 col-md-4 col-lg-3">
+						<div class="single-product">
+							<div class="product-thumbnail-wrapper">
+								<a href="detail.html">
+									
+									<div class="_3NVV-i">
+										<div class="_3yCxz- _3aFlEb _3Kq1-f">
+											<span class="percent">50%</span>
+											<span class="WL8HRl">giảm</span>
+										</div>
+									</div>
+								
+									<div class="product-image d-flex justify-content-center">
+										<img src="asset/img/product03.png" />
+									</div>
+								</a>
+								<div class="product-button-list">
+									<div class="add-to-cart-list">
+										<a href="#" class="btn-product btn-cart">
+											<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+										</a>
+									</div>
+									<div class="product-button-group">
+										<a href="#" class="add-to-wishlist"><i class="fa fa-heart"
+												aria-hidden="true"></i></a>
+										<a href="#" class="add-to-compare"><i class="fa fa-refresh"
+												aria-hidden="true"></i></a>
+										<a data-target="#productModal" class="btn-quickview" data-toggle="modal"
+											title="Quick view" href="#"><i aria-hidden="true"
+												class="fa fa-search"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="product-details-content text-center">
+								<div class="ratting">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+								<a href="#" class="heading-title">Asus Zenbook 14 Q408UG</a>
+								<p class="product-short-content">Ultrabook cao cấp mỏng nhẹ, hiệu năng cao, HOT nhất 2021…
+								</p>
+								<span class="price">
+									<del class="amount">21.990.000 đ</del>
+									<span class="amount">20.990.000 đ</span>
+								</span>
+							</div>
+						</div>
+					</article>
+					<div class="col-12 mt-2 mb-2">
+
+						<ul class="pagination pagination-sm justify-content-end">
+							<li class="page-item disabled">
+								<a class="page-link" href="#" tabindex="-1" aria-disabled="true"><i
+										class="fa fa-chevron-left"></i></a>
+							</li>
+							<li class="page-item"><a class="page-link" href="#">1</a></li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item">
+								<a class="page-link" href="#"><i class="fa fa-chevron-right"></i></a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+	<footer>
+		<div class="container">
+			<div class="row footer-top">
+				<div class="col-6 col-md-4">
+					<div class="footer-title">
+						Địa chỉ liên hệ
+					</div>
+					<div class="footer-text">
+						<a href=""><i class="fa fa-map-marker"></i> Đại học An Giang, DH19TH1</a>
+						<a href=""><i class="fa fa-phone"></i> 0927330957</a>
+						<a href=""><i class="fa fa-envelope"></i> mail@gmail.com</a>
+					</div>
+				</div>
+				<div class="col-6 col-md-4">
+					<div class="footer-title">
+						Danh mục
+					</div>
+					<div class="footer-text">
+						<a href="">Điện thoại</a>
+						<a href="">Laptop</a>
+						<a href="">HeadPhone</a>
+						<a href="">Ipad</a>
+					</div>
+				</div>
+				<div class="col-12 col-md-4">
+					<div class="footer-title">
+						Theo dõi
+					</div>
+
+					<div class="frame">
+						<a href="#" class="btn">
+							<i class="fa fa-facebook-f" style="color: #3b5998;"></i>
+						</a>
+						<a href="#" class="btn">
+							<i class="fa fa-twitter" style="color: #00acee;"></i>
+						</a>
+						<a href="#" class="btn">
+							<i class="fa fa-dribbble" style="color: #ea4c89;"></i>
+						</a>
+						<a href="#" class="btn">
+							<i class="fa fa-google-plus" style="color:#0e76a8;"></i>
+							<a href="#" class="btn">
+								<i class="fa fa-envelope"></i>
+							</a>
+					</div>
+
+				</div>
+			</div>
+			<div class="row footer-bottom">
+				<div class="col-sm-6 col-xs-12 d-flex justify-content-center justify-content-lg-start">
+					<p>Copyright <a target="_blank" href="http://bootexperts.com/">THIÊT KẾ ĐỒ HỌA</a> 2021</p>
+				</div>
+				<div class="col-sm-6 col-xs-12 d-flex justify-content-center justify-content-lg-end">
+					<div class="payment">
+						<ul>
+							<li>
+								<a href="">
+									<img src="asset/img/payment/1.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="asset/img/payment/2.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="asset/img/payment/3.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="asset/img/payment/4.jpg" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+	<script src="asset/js/jquery-3.2.1.min.js"></script>
+	<script src="asset/js/popper.min.js"></script>
+	<script src="asset/js/bootstrap.min.js"></script>
+	<script src="asset/js/slick.js"></script>
+	<script src="asset/js/main.js"></script>
+</body>
+
+</html>

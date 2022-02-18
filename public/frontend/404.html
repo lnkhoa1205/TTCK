@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <canvas id="myCanvas" width="1300" height="500"
+  style="border:100px solid #d3d3d3;">
+  Your browser does not support the canvas element.
+</canvas>
+
+<script>
+  var canvas = document.getElementById("myCanvas");
+  var ctx=canvas.getContext("2d");
+  ctx.font="30px Comic Sans MS";
+  ctx.fillStyle = "red";
+  ctx.textAlign = "center";
+  ctx.fillText("Page Not Found", canvas.width/2, canvas.height/2.4);
+  var ctx1=canvas.getContext("2d");
+  ctx1.font="30px Comic Sans MS";
+  ctx1.fillStyle = "black";
+  ctx1.textAlign = "center";
+  ctx1.fillText("This page could not be found on the server.", canvas.width/2, canvas.height/2);
+  var ctx2=canvas.getContext("2d");
+  ctx2.font="30px Comic Sans MS";
+  ctx2.fillStyle = "black";
+  ctx2.textAlign = "center";
+  ctx2.fillText("404 ERROR!", canvas.width/2, canvas.height/1.8);
+</script>
+
+</body>
+</html>
